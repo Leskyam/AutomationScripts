@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='WINDOWS-1252'?>
+<WMICLASES>
+    <CLASE>	
+	<Nombre>Win32_OperatingSystem</Nombre>
+	<Descripcion>Configuración WMI</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_1394Controller</Nombre>
+	<Descripcion>Interfase 1394</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_BaseBoard</Nombre>
+	<Descripcion>Placa Base</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_Battery</Nombre>
+	<Descripcion>Bateria de respaldo</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_BIOS</Nombre>
+	<Descripcion>BIOS de la placa</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_BootConfiguration</Nombre>
+	<Descripcion>Configuracion de booteo</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_Bus</Nombre>
+	<Descripcion>Bus</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_CacheMemory</Nombre>
+	<Descripcion>Memoria cache</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_ComputerSystem</Nombre>
+	<Descripcion>Sistema</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_ComputerSystemProduct</Nombre>
+	<Descripcion>Sistema como producto</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_DesktopMonitor</Nombre>
+	<Descripcion>Desktop monitor</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_DisplayConfiguration</Nombre>
+	<Descripcion>Configuracion del monitor</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_VideoController</Nombre>
+	<Descripcion>Adaptador de video</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_DiskDrive</Nombre>
+	<Descripcion>Disk Drive</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_CDROMDrive</Nombre>
+	<Descripcion>Unidad de CD</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_PhysicalMedia</Nombre>
+	<Descripcion>Medio Fisico</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_FloppyDrive</Nombre>
+	<Descripcion>Disco floppy</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_InfraredDevice</Nombre>
+	<Descripcion>Dispositivo infrarojo</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_Keyboard</Nombre>
+	<Descripcion>Teclado</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_NetworkAdapter</Nombre>
+	<Descripcion>Adaptador de red</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_OnBoardDevice</Nombre>
+	<Descripcion>Dispositivos Onboard</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_PCMCIAController</Nombre>
+	<Descripcion>Controlador PCMCIA</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_PhysicalMemory</Nombre>
+	<Descripcion>Memoria fisica</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_PointingDevice</Nombre>
+	<Descripcion>Dispositivo apuntador</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_POTSModem</Nombre>
+	<Descripcion>POTS Modem</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_Printer</Nombre>
+	<Descripcion>Impresora</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_Processor</Nombre>
+	<Descripcion>Microprocesador</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_SCSIController</Nombre>
+	<Descripcion>Controlador SCSI</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_SoundDevice</Nombre>
+	<Descripcion>Dispositivo de sonido</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_TapeDrive</Nombre>
+	<Descripcion>Dispositivo de cinta</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_USBController</Nombre>
+	<Descripcion>Controlador USB</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_WMISetting</Nombre>
+	<Descripcion>Configuracion WMI</Descripcion>
+    </CLASE>	
+</WMICLASES>

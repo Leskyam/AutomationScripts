@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='WINDOWS-1252'?>
+<WMICLASES>
+    <CLASE>	
+	<Nombre>Win32_ComputerSystem</Nombre>
+	<Descripcion>Sistema</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_BaseBoard</Nombre>
+	<Descripcion>Placa Base</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_PhysicalMemory</Nombre>
+	<Descripcion>Memoria fisica</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_Processor</Nombre>
+	<Descripcion>Microprocesador</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_DiskDrive</Nombre>
+	<Descripcion>Disk Drive</Descripcion>
+    </CLASE>	
+    <CLASE>	
+	<Nombre>Win32_PhysicalMedia</Nombre>
+	<Descripcion>Medio Fisico</Descripcion>
+    </CLASE>	
+</WMICLASES>
