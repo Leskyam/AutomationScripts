@@ -35,28 +35,28 @@ On Error Resume Next
 
 If InStr(LCase(wscript.fullname),"cscript") = 0 Then
 
-	Dim oShell, oWSHEnv
-	Set oShell=CreateObject("WScript.Shell")
-	Set oWSHEnv = oShell.Environment 
-	strExec = "cscript.exe //Logo //H:cscript //S"
-	oShell.Run strExec,0,True
+    Dim oShell, oWSHEnv
+    Set oShell=CreateObject("WScript.Shell")
+    Set oWSHEnv = oShell.Environment 
+    strExec = "cscript.exe //Logo //H:cscript //S"
+    oShell.Run strExec,0,True
 
-	strExec = ""
+    strExec = ""
   If oWSHEnv("OS") = "Windows_NT" Then
     strExec = "cmd"
   else
     strExec = "command"
   End If
 
-	strExec = strExec & " /c " & Chr(34) & "cscript.exe " & Chr(34) & _
-	WScript.ScriptFullname & Chr(34)& Chr(34)
+    strExec = strExec & " /c " & Chr(34) & "cscript.exe " & Chr(34) & _
+    WScript.ScriptFullname & Chr(34)& Chr(34)
 
-	oShell.Run strExec,,True
+    oShell.Run strExec,,True
 
-	strExec = "cscript.exe //Logo //H:WScript //S"
-	oShell.Run strExec,0,False
+    strExec = "cscript.exe //Logo //H:WScript //S"
+    oShell.Run strExec,0,False
 
-	Wscript.Quit
+    Wscript.Quit
 
 End If
 
@@ -73,7 +73,7 @@ strScriptPath=Left(wscript.scriptfullname, _
 Len(wscript.scriptfullname)-Len(wscript.scriptname))
 
 If Right(strScriptPath,1) <> "\" Then
-	strScriptPath=strScriptPath & "\"
+    strScriptPath=strScriptPath & "\"
 End If
 
 SetExecutingFromPath=strScriptPath
@@ -119,11 +119,11 @@ Dim oFSO
 Set oFSO = WScript.CreateObject("Scripting.FileSystemObject")
 'Fichero de inventario
 If oFSO.FileExists(strInventoryFile) Then
-	oFSO.DeleteFile(strInventoryFile)
+    oFSO.DeleteFile(strInventoryFile)
 End If
 'Fichero de errores
 If oFSO.FileExists(strErrorsFile) Then
-	oFSO.DeleteFile(strErrorsFile)
+    oFSO.DeleteFile(strErrorsFile)
 End If
 
 Set oFSO = Nothing
@@ -255,15 +255,15 @@ x = 1
 For Each oClassItem in oClass
     WriteToInventoryFile "<Elemento ID='" & x & "'>"
     For Each oCampo in oClassItem.Properties_
-			If Err <> 0 Then
-				LogError "Sub SetClassData. WMI Clase: " & strClassName, Err.Number, Err.Description, "", "Escribiendo en: " & strInventoryFile
-				Err.Clear
-			Else
-			  If Not oCampo.IsArray  AND Not isNull(oCampo.value) Then
-				  strValue = Trim(MyXMLParser(oCampo.value))
-				  WriteToInventoryFile "<" & oCampo.name & ">" & strValue & "</" & oCampo.name & ">"
-					WScript.Echo "PROPIEDAD: " & oCampo.name & " VALOR: '" & oCampo.Value & "'"
-			  End If
+            If Err <> 0 Then
+                LogError "Sub SetClassData. WMI Clase: " & strClassName, Err.Number, Err.Description, "", "Escribiendo en: " & strInventoryFile
+                Err.Clear
+            Else
+              If Not oCampo.IsArray  AND Not isNull(oCampo.value) Then
+                  strValue = Trim(MyXMLParser(oCampo.value))
+                  WriteToInventoryFile "<" & oCampo.name & ">" & strValue & "</" & oCampo.name & ">"
+                    WScript.Echo "PROPIEDAD: " & oCampo.name & " VALOR: '" & oCampo.Value & "'"
+              End If
       End If
     Next
     WriteToInventoryFile "</Elemento>"
@@ -316,7 +316,7 @@ Set oXMLFile = CreateObject("Microsoft.XMLDOM")
 Set oFSO = WScript.CreateObject("Scripting.FileSystemObject")
 strXMLFile = "WMI_CLASES.XML"
 If oFso.FileExists("WMI_CLASES_REDUCED.XML") Then 
-	strXMLFile = "WMI_CLASES_REDUCED.XML"
+    strXMLFile = "WMI_CLASES_REDUCED.XML"
 End If
 
 Set oFSO = Nothing
@@ -327,7 +327,7 @@ If oXMLFile.Load(strXMLFile) Then
   strNombrePath = "/WMICLASES/CLASE/Nombre"
   Set oNodeNombreList = oXMLFile.selectNodes(strNombrePath)
   For x = 0 To oNodeNombreList.length - 1
-				SetClassHeader oNodeNombreList.Item(x).text
+                SetClassHeader oNodeNombreList.Item(x).text
         SetClassData oNodeNombreList.Item(x).text
         SetClassFooter oNodeNombreList.Item(x).text
   Next 
@@ -335,7 +335,7 @@ If oXMLFile.Load(strXMLFile) Then
 Else
 
   WScript.Echo "Error al cargar el fichero XML que contiene las clases. Se esperaba un fichero de nombre '" & strXMLFile & _
-			   "' donde se definían las clases que se encuestarías para recuperar los datos necesarios."
+               "' donde se definían las clases que se encuestarías para recuperar los datos necesarios."
   WScript.Quit
 
 End If
